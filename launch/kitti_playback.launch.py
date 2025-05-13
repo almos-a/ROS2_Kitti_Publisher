@@ -24,7 +24,6 @@ def generate_launch_description():
             name='kitti_publisher',
             output='screen',
             parameters=[
-                {'kitti_seq_path': '/home/almos/kitti_dataset/KITTI_ds/dataset/sequences/00/'},
                 {'playback_rate': 10.0}
             ]
         )
