@@ -2,8 +2,8 @@
 A ros2 package that publishes kitti sequence and kitti raw datasets
 
 Clone the repository to your src folder
-
 ```bash
+cd ~/ros2_ws/src
 git clone https://github.com/almos-a/ROS2_Kitti_Publisher.git
 ```
 ## Update dataset directory
@@ -11,6 +11,11 @@ Remember to update your Kitti sequence and raw dataset directory in the `kitti_p
 
 ## Install
 Install with `colcon build` and source using `source install/setup.bash`.
+```bash
+cd ..
+colcon build
+source install/setup.bash
+```
 
 ## Example Usage 
 ```bash
