@@ -16,3 +16,6 @@ Install with `colcon build` and source using `source install/setup.bash`.
 ```bash
 ros2 launch kitti_publisher kitti_playback.launch.py 
 ```
+
+### Dataset
+Download the dataset from https://www.cvlibs.net/datasets/kitti/index.php
