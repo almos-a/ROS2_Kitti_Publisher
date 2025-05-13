@@ -1,10 +1,15 @@
 # ROS2_Kitti_Publisher
 A ros2 package that publishes kitti sequence and kitti raw datasets
 
-clone the repository to your src folder
+Clone the repository to your src folder
 
-colcon build
+```bash
+/home/almos/slam_ws/data/2011_09_26/2011_09_26_drive_0022_sync/
+```
 
-source instal/setup.bash
+Install with `colcon build` and source using `source install/setup.bash`.
 
-ros2 launch 
+Example Usage 
+```bash
+ros2 launch kitti_publisher kitti_playback.launch.py 
+```
