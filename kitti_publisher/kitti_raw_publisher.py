@@ -19,7 +19,7 @@ class KittiRawPublisher(Node):
         super().__init__('kitti_raw_publisher')
 
         # Parameters
-        self.declare_parameter('base_path', '/home/almos/slam_ws/data/2011_09_26/2011_09_26_drive_0022_sync/')
+        self.declare_parameter('base_path', '/data/2011_09_26/2011_09_26_drive_0022_sync/')
         self.declare_parameter('playback_rate', 1.0)  # 1x speed
 
         base_path = self.get_parameter('base_path').get_parameter_value().string_value
