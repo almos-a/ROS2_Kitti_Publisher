@@ -2,10 +2,10 @@
 <?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
 <package format="3">
   <name>kitti_publisher</name>
-  <version>0.0.0</version>
-  <description>TODO: Package description</description>
-  <maintainer email="almos@todo.todo">almos</maintainer>
-  <license>TODO: License declaration</license>
+  <version>1.0.0</version>
+  <description>A python package to publish the kitti dataset</description>
+  <maintainer email="almosjosh@gmail.com, amalwa@utu.fi">almos</maintainer>
+  <license>MIT</license>
 
   <depend>rclpy</depend>
   <depend>sensor_msgs</depend>
