@@ -42,10 +42,11 @@ class KittiPublisher(Node):
         self.frame_id = 0
         self.timer = self.create_timer(0.1, self.timer_callback)  # 10 Hz
 
-        self.kitti_seq_path = '/media/almos/New Volume/datasets/kitti_seq/dataset/sequences/08/' 
+        self.kitti_seq_path = '/dataset/sequences/08/' 
         self.image_path = os.path.join(self.kitti_seq_path, 'image_0')
         self.lidar_path = os.path.join(self.kitti_seq_path, 'velodyne')
-        self.label_path = os.path.join(self.kitti_seq_path, 'label') ##passed in wrong label dire name to skip semantic labelling
+        self.label_path = os.path.join(self.kitti_seq_path, 'label') #passed in wrong label dir name to skip semantic labelling
+        # to re-enable semantic labels pass corects 'labels' dir
         self.poses = self.load_poses(os.path.join(self.kitti_seq_path, 'poses.txt'))
 
         self.paused = False
