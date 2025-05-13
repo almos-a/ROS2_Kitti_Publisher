@@ -14,7 +14,6 @@ setup(
         (os.path.join('share', package_name, 'rviz'), glob('rviz/*.rviz')),
         ('share/kitti_publisher/launch', ['launch/kitti_playback.launch.py']),
         ('share/kitti_publisher/launch', ['launch/kitti_raw_playback.launch.py']),
-        #('share/kitti_publisher/launch', ['launch/kitti_rviz.launch.py']),
     ],
     install_requires=['setuptools'],
     zip_safe=True,
