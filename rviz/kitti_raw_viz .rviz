@@ -1,0 +1,91 @@
+Panels:
+  - Class: rviz_common/Displays
+    Name: Displays
+  - Class: rviz_common/Selection
+    Name: Selection
+  - Class: rviz_common/Tool Properties
+    Name: Tool Properties
+  - Class: rviz_common/Views
+    Name: Views
+Visualization Manager:
+  Class: ""
+  Displays:
+    - Name: Grid
+      Class: rviz_default_plugins/Grid
+      Enabled: true
+    - Name: TF
+      Class: rviz_default_plugins/TF
+      Enabled: true
+      Frame Timeout: 15.0
+      Frames:
+        - Frame: map
+          Value: true
+        - Frame: imu
+          Value: true
+    - Name: Cameras
+      Class: rviz_default_plugins/Group
+      Enabled: true
+      Displays:
+        - Name: Camera0
+          Class: rviz_default_plugins/Image
+          Topic: /kitti/image_00
+          Enabled: true
+          Queue Size: 1
+        - Name: Camera1
+          Class: rviz_default_plugins/Image
+          Topic: /kitti/image_00
+          Enabled: false
+          Queue Size: 1
+        - Name: Camera2
+          Class: rviz_default_plugins/Image
+          Topic: /kitti/image_00
+          Enabled: false
+          Queue Size: 1
+        - Name: Camera3
+          Class: rviz_default_plugins/Image
+          Topic: /kitti/image_00
+          Enabled: false
+          Queue Size: 1
+    - Name: Lidar
+      Class: rviz_default_plugins/PointCloud2
+      Topic: /kitti/velodyne
+      Enabled: true
+      Queue Size: 1
+      Style: Points
+      Size (Pixels): 2
+      Alpha: 1.0
+      Color Transformer: Intensity
+    - Name: Pose
+      Class: rviz_default_plugins/Pose
+      Topic: /kitti/pose
+      Enabled: true
+      Queue Size: 1
+      Color: 0.0; 1.0; 0.0
+      Shaft Length: 1.0
+      Shaft Diameter: 0.05
+      Head Length: 0.3
+      Head Diameter: 0.1
+    - Name: IMU
+      Class: rviz_default_plugins/IMU
+      Topic: /kitti/imu
+      Enabled: true
+      Queue Size: 1
+      Acceleration Color: 1.0; 0.0; 0.0
+      Angular Velocity Color: 0.0; 0.0; 1.0
+      Alpha: 0.8
+  Global Options:
+    Fixed Frame: map
+  Tools:
+    - Class: rviz_default_plugins/Interact
+    - Class: rviz_default_plugins/MoveCamera
+    - Class: rviz_default_plugins/Select
+    - Class: rviz_default_plugins/FocusCamera
+    - Class: rviz_default_plugins/Measure
+    - Class: rviz_default_plugins/SetInitialPose
+    - Class: rviz_default_plugins/SetGoal
+  Views:
+    Current:
+      Class: rviz_default_plugins/Orbit
+      Distance: 30.0
+      Pitch: 0.5
+      Yaw: 1.57
