@@ -7,7 +7,7 @@ Clone the repository to your src folder
 git clone https://github.com/almos-a/ROS2_Kitti_Publisher.git
 ```
 ## Update dataset directory
-Remeber to update your Kitti sequence and raw dataset directory in the `kitti_publisher/kitti_publisher.py` and the `kitti_publisher/kitti_raw_publisher.py`
+Remember to update your Kitti sequence and raw dataset directory in the `kitti_publisher/kitti_publisher.py` and the `kitti_publisher/kitti_raw_publisher.py`
 
 ## Install
 Install with `colcon build` and source using `source install/setup.bash`.
