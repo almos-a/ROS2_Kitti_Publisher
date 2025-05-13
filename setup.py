@@ -19,7 +19,7 @@ setup(
     install_requires=['setuptools'],
     zip_safe=True,
     maintainer='almos',
-    maintainer_email='almosjosh@gmail.com,amalwa@utu.fi',
+    maintainer_email='almosjosh@gmail.com',
     description='Kitti Sequence publisher',
     license='MIT',
     tests_require=['pytest'],
